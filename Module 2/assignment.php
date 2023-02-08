@@ -16,10 +16,10 @@
 //     echo "Invalid Amount";
 // }
 
-echo PHP_EOL . "============" . PHP_EOL;
+// echo PHP_EOL . "============" . PHP_EOL;
 
-$tuitionFee = 29000;
+// $tuitionFee = 7000;
 
-$percentage = ( $tuitionFee >= 20000 ) ? ( 25 / 100 ) * $tuitionFee : (  ( $tuitionFee >= 10000 ) ? ( 20 / 100 ) * $tuitionFee : (  ( $tuitionFee >= 7000 ) ? ( 15 / 100 ) * $tuitionFee : "Invalid Amount" ) );
+// $percentage = ( $tuitionFee > 20000 ) ? ( 25 / 100 ) * $tuitionFee : (  ( $tuitionFee > 10000 && $tuitionFee < 20000 ) ? ( 20 / 100 ) * $tuitionFee : (  ( $tuitionFee > 7000 && $tuitionFee < 10000 ) ? ( 15 / 100 ) * $tuitionFee : (  ( $tuitionFee < 7000 ) ? "Invalid Amount" : "" ) ) );
 
-echo $percentage;
+// echo $percentage;
