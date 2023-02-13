@@ -12,7 +12,7 @@
 // echo "<br />";
 // echo $x++ + $x++;
 
-$num = 10;
+$num = -30;
 // Using if statement
 if ( $num > 0 ) {
     $result = 'positive';
@@ -25,3 +25,7 @@ if ( $num > 0 ) {
     $result = "its zero";
 }
 echo $result;
+echo PHP_EOL;
+
+$result = $num > 0 ? 'positive' : (  ( $num < 0 ? ( $num < -10 ? 'value is below -10' : 'negative' ) : 'its zero' ) );
+echo "new $result";

@@ -64,9 +64,64 @@
 
 // echo PHP_EOL;
 
-$isLGSeven = fn( $n ) => ( abs( $n - 7 ) < 7 ) ? $n - 7 : abs( $n - 7 ) * 2;
+// $isLGSeven = fn( $n ) => ( abs( $n - 7 ) < 7 ) ? $n - 7 : abs( $n - 7 ) * 2;
 
-echo $isLGSeven( 13 );
-echo PHP_EOL;
-$isSeven = fn( $v ) => 7 >= abs( $v ) ? $v - 7 : ( 7 >= abs( 7 - $v ) ? abs( $v - 7 ) : abs( 7 - $v ) * 2 );
-echo $isSeven( 13 );
+// echo $isLGSeven( -6 );
+// echo PHP_EOL;
+// $isSeven = fn( $v ) => 7 >= abs( $v ) ? $v - 7 : ( 7 >= abs( 7 - $v ) ? abs( $v - 7 ) : abs( 7 - $v ) * 2 );
+// echo $isSeven( -6 );
+
+// ===========================
+// PROBLEMS
+// ===========================
+
+// Fibonacci with recursion
+
+// function fibo( $first, $second, $start, $end ) {
+//     if ( $start > $end ) {
+//         return;
+//     }
+//     echo "$first \n";
+//     $third = $first + $second;
+//     $first = $second;
+//     $second = $third;
+//     $start++;
+//     fibo( $first, $second, $start, $end );
+// }
+
+// fibo( 0, 1, 1, 10 );
+
+// function strFunc( $str ) {
+//     if ( strlen( $str ) == 0 ) {
+//         return "";
+//     } else {
+//         return strFunc( substr( $str, 1 ) ) . ( substr( $str, 0, 1 ) );
+//     }
+// }
+
+// echo strFunc( "hello" );
+
+// $foo = function ( $x ) {return $x * 2;};
+// $bar = function ( $x ) use ( $foo ) {
+//     return $foo( $x ) + 1;
+// };
+
+// echo $bar( 5 );
+
+// $numbers = array( 1, 2, 3, 4, 5 );
+// $sum = 0;
+// foreach ( $numbers as $num ) {
+//     if ( $num % 2 == 0 ) {
+//         continue;
+//     }
+//     $sum += $num;
+// }
+
+// echo $sum;
+$numbers = array( 1, 2, 3, 4, 5 );
+
+$i = 0;
+do {
+    echo $numbers[$i];
+    $i++;
+} while ( $i < count( $numbers ) );
